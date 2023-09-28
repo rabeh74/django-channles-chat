@@ -28,7 +28,7 @@ This is a chatroom application built with Django and Django Channels. It allows 
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone
-   cd
+   git clone https://github.com/rabeh74/django-channles-chat.git
+   cd django-channles-chat
    docker-compose up --build
 

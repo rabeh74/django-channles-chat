@@ -18,6 +18,7 @@ services:
       - DB_NAME=devdb
       - DB_USER=devuser
       - DB_PASS=devpass
+      # - DJANGO_REDIS_URL=redis://redis:6379/0
 
     depends_on:
       - db
@@ -29,6 +30,13 @@ services:
       - POSTGRES_DB=devdb
       - POSTGRES_USER=devuser
       - POSTGRES_PASSWORD=devpass
+
+  # redis:
+  #   container_name: redis
+  #   image: redis:5
+  #   restart: unless-stopped
+  #   ports:
+  #       - 6378:6379
 volumes:
   dev-db-data:
   dev-static-data:
